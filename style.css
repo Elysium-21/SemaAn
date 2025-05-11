@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #ff9aa2, #ffdde1);
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+h1 {
+  margin: 30px 0;
+  font-size: 2.5em;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 90%;
+  margin: auto;
+  padding: 20px;
+}
+
+.slide {
+  display: none;
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.slide.show {
+  display: block;
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+#video-container {
+  margin-top: 40px;
+}
+
+video {
+  width: 90%;
+  max-width: 600px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px white;
+}
